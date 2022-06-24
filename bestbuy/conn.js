@@ -12,3 +12,5 @@ if(process.env.NODE_ENV === 'production') {
 const pool = new Pool(poolConfig);
 
 module.exports = pool;
+
+//I effed up
