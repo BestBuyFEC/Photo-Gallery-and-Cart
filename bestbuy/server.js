@@ -38,7 +38,6 @@ app.get('/api/product/:id', async (req, res) => {
 
 app.get('/api/cart/:id', async (req, res) => {
     try {
-        await db.query(`INSERT INTO cart (product_name, price, quantity, image_url, product_id) VALUES ('LEGO - Super Mario Nintendo Entertainment System 71374', 229.99, 1, 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6434/6434148_sd.jpg',1);`);
         let data = await db.query(`SELECT * FROM cart WHERE id = ${req.params.id};`)
         res.json(data.rows)
     } catch (error) {
