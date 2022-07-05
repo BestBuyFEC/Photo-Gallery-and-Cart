@@ -1,4 +1,4 @@
-
+/* 
 
 .App-logo {
   height: 40vmin;
@@ -9,7 +9,7 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -35,14 +35,18 @@
   }
 }
 
+a{
+  color: blue;
+}
 .carousel-root {
   outline: none;
-  width: 30%;
+  /* width: 30%; */
 }
 
 .pic{
-  width: 50%;
-  height: 50%;
+  width: 550px;
+  height: 700px;
+  margin-bottom: 150px;
 }
 
 .main-section{
@@ -133,21 +137,27 @@
   display: flex;
   flex-direction: row;
   padding: 0;
+  padding-bottom: 10px;
 }
 
 .product-info{
   padding-right: 1rem;
 }
 
-.star{
-  width: 80px;
-  height: 60px;
+img.star{
+  width: 16px;
+  height: 16px;
+}
+
+.starReviewContainer{
+  padding-bottom: 10px;
 }
 
 .review-overview{
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: left;
   padding-bottom: .5rem;
 }
 
@@ -182,23 +192,37 @@
   padding-top: 3rem;
 }
 
+.box-icon-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
 .box{
   width:24px;
   height:24px;
   float: left;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
 }
 
 .returns{
-  background-color: lightgray;
+  background-color: #f0f2f4;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .combine-flex-column{
   display: flex;
   flex-direction: column;
-  padding-left: 2rem;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .pickup-icon{
@@ -211,18 +235,19 @@
   flex-direction: column;
   height: 100%;
   width: 40%;
-  padding-right: 5rem;
+  /* padding-right: 5rem; */
 }
 
 .how-to-get{
   padding-top: 2rem;
   border-bottom: 1px solid gray;
   padding-bottom: 2rem;
+  text-align: left !important;
 }
 
 .when-to-get{
   color: green;
-  padding-bottom: 1rem;
+  padding-bottom: 10px;
 }
 
 .locations{
@@ -235,7 +260,7 @@
 }
 
 .get-shipped{
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .ship-options{
@@ -274,8 +299,9 @@
 .details-second{
   display: flex;
   flex-direction: column;
-  width: 66%;
-  padding-left: 5rem;
+  /* width: 66%;
+  padding-left: 5rem; */
+  width: 860px;
 }
 
 .order-summary-flex{
@@ -398,4 +424,25 @@
   width: 80%;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.pricingCarouselContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.infoTitle {
+  font-size: 21px;
+  font-weight: normal;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.brandTitle{
+  display: flex;
+  justify-self: left;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: none !important;
 }
