@@ -4,11 +4,11 @@ function Details({ info }) {
   return (
     <div className="details-main">
       <div>
-        <a href="">LEGO</a>
+        <a className="brandTitle" href="">LEGO</a>
       </div>
       {info.map((info) => (
         <>
-          <h1>{info.product_name}</h1>
+          <h1 className="infoTitle">{info.product_name}</h1>
           <div>
             <ul className="product-info-ul">
               <li className="product-info">
@@ -26,18 +26,43 @@ function Details({ info }) {
             </ul>
           </div>
           <div className="review-overview">
-            <img
-              className="star"
-              alt=""
-              src="https://freesvg.org/img/16231559165-star-rating-condensed.png?w=80&h=80&fit=fill&fm=png"
-            ></img>
-            <a className="review-word" href="">
+            <div className="starReviewContainer">
+
+              <img
+                className="star"
+                alt=""
+                src="https://www.realisgymnastics.com/wp-content/uploads/2017/02/480px-Gold_Star.svg_.png"
+              ></img>
+              <img
+                className="star"
+                alt=""
+                src="https://www.realisgymnastics.com/wp-content/uploads/2017/02/480px-Gold_Star.svg_.png"
+              ></img>
+              <img
+                className="star"
+                alt=""
+                src="https://www.realisgymnastics.com/wp-content/uploads/2017/02/480px-Gold_Star.svg_.png"
+              ></img>
+              <img
+                className="star"
+                alt=""
+                src="https://www.realisgymnastics.com/wp-content/uploads/2017/02/480px-Gold_Star.svg_.png"
+              ></img>
+              <img
+                className="star"
+                alt=""
+                src="https://www.realisgymnastics.com/wp-content/uploads/2017/02/480px-Gold_Star.svg_.png"
+              ></img>
+              <a className="review-word" href="">
               <b>5.0 </b>(41 Reviews)
-            </a>
-          </div>
-          <div className="highly-rated">
+              </a>
+            </div>
+
+            <div className="highly-rated">
               <p>Highly rated by customers for: <a href=''>Design, Ease of use</a></p>
           </div>
+          </div>
+
         </>
       ))}
     </div>

@@ -14,14 +14,14 @@ function App() {
   useEffect(() => {
     async function fetchImg() {
       let call = await fetch(
-        `http://${window.location.hostname}:3000/api/product/image/1`
+        `http://${window.location.hostname}:3001/api/product/image/1`
       );
       let data = await call.json();
       setImages(data);
     }
     async function fetchProduct() {
       let call = await fetch(
-        `http://${window.location.hostname}:3000/api/product/1`
+        `http://${window.location.hostname}:3001/api/product/1`
       );
       let data = await call.json();
       setInfo(data);
@@ -33,7 +33,7 @@ function App() {
 
   async function fetchCart() {
     let call = await fetch(
-      `http://${window.location.hostname}:3000/api/cart/1`
+      `http://${window.location.hostname}:3001/api/cart/1`
     );
     let data = await call.json();
     setCart(data);
@@ -53,10 +53,10 @@ function App() {
           </div>
           <AddToCart info={info} fetchCart={fetchCart} />
         </div>
-        <div className="order-summary-flex">
+        {/* <div className="order-summary-flex">
         <Cart images={images} cart={cart} setCartToZero={setCartToZero}/>
         <OrderSummary cart={cart}/>
-        </div>
+        </div> */}
       </div>
     );
   }
